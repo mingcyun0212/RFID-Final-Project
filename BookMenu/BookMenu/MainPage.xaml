@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="BookMenu.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BookMenu"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Height="891" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1588" Margin="0,0,-222,-123">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/197or.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="61*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Button Content="還書" HorizontalAlignment="Left" Margin="655,341,0,0" VerticalAlignment="Top" Height="120" Width="276" FontSize="40" Click="LentBook_Click" Background="#00000000"/>
+        <Button x:Name="booksearsch" Content="書籍查詢" HorizontalAlignment="Left" Margin="655,127,0,0" VerticalAlignment="Top" Height="120" FontSize="40" Click="BookSearch_Click" Width="276" Background="#00000000" PointerEntered="mouse_enter"/>
+        <Button Content="會員個資查詢" HorizontalAlignment="Left" Margin="655,561,0,0" VerticalAlignment="Top" Height="120" Width="276" FontSize="40" Click="PersonalDataSearch_Click" Background="#00000000"/>
+
+    </Grid>
+</Page>
